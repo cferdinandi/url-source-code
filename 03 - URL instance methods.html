@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URL Instance Methods</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// Create a new URL object
+			let url = new URL(`https://gomakethings.com/checkout`);
+
+			// These all return the same thing
+			let str1 = url.toString();
+			let str2 = url.toJSON();
+			let str3 = url.href;
+
+			console.log(str1);
+			console.log(str2);
+			console.log(str3);
+		</script>
+	</body>
+</html>

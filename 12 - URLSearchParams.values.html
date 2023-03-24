@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URLSearchParams.values()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+			// Loop through
+			for (let val of params.values()) {
+				console.log(val);
+			}
+
+			// Convert to an array
+			let arr = Array.from(params.values());
+			console.log(arr);
+		</script>
+	</body>
+</html>

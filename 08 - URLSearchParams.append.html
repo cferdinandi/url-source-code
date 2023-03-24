@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URLSearchParams.append()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+			// Adds an additional "product_id" value
+			params.append('product_id', '98712');
+			console.log(params.getAll('product_id'));
+
+			// Creates a new entry, "discount"
+			params.append('discount', 'EARLYBIRD');
+			console.log(params.getAll('discount'));
+		</script>
+	</body>
+</html>

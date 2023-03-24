@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URLSearchParams.set()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+			// Add a new parameter, "discount", to the URLSearchParams object
+			params.set('discount', 'EARLYBIRD');
+			console.log(params.get('discount'));
+
+			// Overwrite the "quantity" parameter
+			console.log(params.get('quantity'));
+			params.set('quantity', '7');
+			console.log(params.get('quantity'));
+		</script>
+	</body>
+</html>

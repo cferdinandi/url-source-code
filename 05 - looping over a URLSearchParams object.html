@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Looping over a URLSearchParams object</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+
+			// Looping with a for...of loop
+			for (let param of params) {
+				console.log(param);
+			}
+
+
+			// Using array destructuring
+			for (let [key, value] of params) {
+				console.log(key);
+				console.log(value);
+			}
+
+
+			// Using the URLSearchParams.forEach() method
+			params.forEach(function (value, key) {
+				console.log(key);
+				console.log(value);
+			});
+		</script>
+	</body>
+</html>

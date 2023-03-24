@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URLSearchParams.get() and URLSearchParams.getAll()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+			// Get the value of the first matching key
+			let id = params.get('product_id');
+			console.log(id);
+
+			// Get the value of all matching keys
+			let productIDs = params.getAll('product_id');
+			console.log(productIDs);
+		</script>
+	</body>
+</html>

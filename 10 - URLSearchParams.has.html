@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URLSearchParams.has()</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URLSearchParams object
+			let params = new URLSearchParams('product_id=12374&quantity=42');
+
+			// Check for the "product_id" key
+			let hasID = params.has('product_id');
+
+			// Check for the "discount" key
+			let hasDiscount = params.has('discount');
+		</script>
+	</body>
+</html>

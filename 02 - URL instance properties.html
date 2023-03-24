@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>URL Instance Properties</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// A new URL object
+			let url = new URL('https://LordAwesomesauce:NotVerySecure@gomakethings.com:8000/checkout?product_id=12374&quantity=42#cart');
+
+			// The hostname, including port if there is one
+			let host = url.host;
+			console.log(host);
+
+			// The hostname without a port
+			let hostname = url.hostname;
+			console.log(hostname);
+
+			// The port, if there is one
+			let port = url.port;
+			console.log(port);
+
+			// The protocol (http:, https:, etc)
+			let protocol = url.protocol;
+			console.log(protocol);
+
+			// The URL origin (protocol + hostname + port)
+			let origin = url.origin;
+			console.log(origin);
+
+			// The URL path
+			let path = url.pathname;
+			console.log(path);
+
+			// The full URL string
+			let href = url.href;
+			console.log(href);
+
+			// The URL hash
+			let hash = url.hash;
+			console.log(hash);
+
+			// URL query string parameters
+			let search = url.search;
+			console.log(search);
+
+			// The username and password
+			let username = url.username;
+			let password = url.password;
+			console.log(username, password);
+
+			// Remove the username and password
+			url.username = '';
+			url.password = '';
+			url.hash = '#credit-cart';
+			console.log(url.href);
+		</script>
+	</body>
+</html>

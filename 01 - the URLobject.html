@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>The URL Object</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+	<body>
+
+
+		<script>
+			// An absolute URL string
+			let resources = new URL('https://gomakethings.com/resources');
+			console.log(resources);
+
+			// A relative URL string and base URL string
+			let articles = new URL('/articles', 'https://gomakethings.com');
+			console.log(articles);
+		</script>
+	</body>
+</html>
